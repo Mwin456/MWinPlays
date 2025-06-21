@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 
 void main() {
@@ -11,8 +10,12 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'MWinPlay',
       home: Scaffold(
-        appBar: AppBar(title: Text('MWinPlay')),
-        body: Center(child: Text('Welcome to MWinPlay Game')),
+        appBar: AppBar(
+          title: Text('Welcome to MWinPlay'),
+        ),
+        body: Center(
+          child: Text('Game Start!'),
+        ),
       ),
     );
   }
