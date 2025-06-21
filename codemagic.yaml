@@ -1,13 +1,12 @@
 workflows:
-  default-workflow:
-    name: Build MWinPlay APK
-    max_build_duration: 60
+  android-workflow:
+    name: Build Android APK
     environment:
       flutter: stable
     scripts:
       - name: Install dependencies
         script: flutter pub get
       - name: Build APK
-        script: flutter build apk --release
+        script: flutter build apk
     artifacts:
       - build/app/outputs/flutter-apk/app-release.apk
